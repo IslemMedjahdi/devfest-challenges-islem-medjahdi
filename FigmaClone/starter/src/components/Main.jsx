@@ -8,10 +8,11 @@ const Main = ({
   position,
   opacity,
   setOpacity,
+  children,
 }) => {
   return (
-    <div className="grid grid-cols-12 h-[calc(100vh-3.5rem)] ">
-      <div className="col-span-10" />
+    <div className="h-[calc(100vh-3.5rem)] ">
+      <div className="w-full h-[calc(100vh-3.5rem)]">{children}</div>
       <BarSide
         setBackgroundColor={setBackgroundColor}
         setStrokeColor={setStrokeColor}
