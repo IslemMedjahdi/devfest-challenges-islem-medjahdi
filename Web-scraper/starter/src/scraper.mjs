@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
-
+import fs from "fs";
+import path from "path";
 (async () => {
   const response = await fetch(
     "https://devfest22-recipes-heaven.gdgalgiers.com/api/recipes",
@@ -10,6 +11,11 @@ import fetch from "node-fetch";
     }
   );
   const data = await response.json();
+  await fs.promises.writeFile(
+    path.join(".", "recepies.json"),
+    JSON.stringify({ recipes: data }),
+    "utf8"
+  );
   console.log(data);
   console.log("I'm scraping information for you lazy stackoverflow-er ...");
 })();
