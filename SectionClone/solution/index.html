@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IWD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col relative">
+    <div class="absolute top-24 right-0">
+      <img
+        src="assets/pc.png"
+        alt="question"
+        class="reveal w-[8rem] object-contain"
+      />
+    </div>
+    <div class="absolute bottom-20 left-0">
+      <img
+        src="assets/envelop.png"
+        alt="question"
+        class="reveal w-[8rem] object-contain"
+      />
+    </div>
+    <div class="absolute bottom-12 right-0 p-10">
+      <img src="assets/question.png" alt="question" class="reveal-1" />
+    </div>
+    <div class="absolute left-0 bottom-0 p-4">
+      <img
+        src="assets/text-bottom.png"
+        alt="text"
+        class="title w-full object-contain h-14"
+      />
+    </div>
+    <div class="absolute w-full h-full pb-14">
+      <img src="assets/Hero-corp.png" class="w-full h-full" />
+    </div>
+    <header class="flex items-center justify-between py-4 px-8 z-20">
+      <div>
+        <img
+          src="assets/logo.png"
+          alt="logo"
+          class="w-auto h-10 object-contain"
+        />
+      </div>
+      <nav>
+        <ul class="flex items-center gap-x-8">
+          <li><a class="font-medium text-gray-900" href="#">Home</a></li>
+          <li>
+            <a class="text-gray-700 hover:text-gray-900 transition" href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-700 hover:text-gray-900 transition" href="#"
+              >Agenda</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-700 hover:text-gray-900 transition" href="#"
+              >Speakers</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-700 hover:text-gray-900 transition" href="#"
+              >Sponsors</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="relative group">
+        <button
+          class="px-10 py-2 bg-[#7F90F4] font-bold text-white group-active:scale-95"
+        >
+          Register
+        </button>
+        <img
+          src="assets/frame.png"
+          class="h-full w-full absolute top-0 group-active:scale-95 pointer-events-none"
+        />
+      </div>
+    </header>
+    <main class="flex items-center flex-1 flex-col justify-between p-14 z-20">
+      <img src="assets/iwd.png" alt="iwd" class="h-48 w-auto" />
+      <div class="flex flex-col items-center gap-y-6">
+        <div class="flex justify-end">
+          <img class="title" src="assets/title.png" alt="title" />
+        </div>
+        <div class="relative group">
+          <button
+            style="
+              background: linear-gradient(
+                90deg,
+                #4fc3f7 0%,
+                #49a7f6 21%,
+                #448ef4 44%,
+                #4285f4 58%,
+                #4586f4 67%,
+                #5087f4 74%,
+                #618bf4 80%,
+                #7a8ff4 86%,
+                #7f90f4 87%
+              );
+            "
+            class="px-20 py-4 font-bold text-white text-lg cursor-pointer group-active:scale-95"
+          >
+            Register
+          </button>
+
+          <img
+            src="assets/frame.png"
+            class="h-full w-full absolute top-0 pointer-events-none group-active:scale-95"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
