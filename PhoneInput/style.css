@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+[data-slots] {
+  font-family: monospace;
+}
+
 body {
   display: flex;
   height: 100vh;
@@ -54,7 +58,7 @@ body {
   align-items: center;
 }
 
-#input {
+.input {
   padding: 0.3rem 0.4rem;
   outline: 0;
   border: 1px gray solid;
