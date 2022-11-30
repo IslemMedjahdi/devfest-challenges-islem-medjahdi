@@ -1,61 +1,84 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
   </head>
-  <body class="flex justify-center items-center h-screen bg-gray-900">
-    <div id="myList">
-      <!-- START CARD #1 -->
-      <div
-        class="bg-white relative w-96 py-4 px-12 h-56 rounded-xl shadow-lg shadow-red-700"
-      >
-        <div
-          id="card-1"
-          class="absolute -top-12 rounded-full shadow-lg shadow-red-700"
-        >
-          <img
-            src="assets/image1.png"
-            class="h-24 w-24 object-cover rounded-full"
-          />
-        </div>
-        <div
-          id="card-2"
-          class="absolute bottom-10 -left-36 rounded-full shadow-lg shadow-red-700"
-        >
-          <img
-            src="assets/image2.png"
-            class="h-24 w-24 object-cover rounded-full"
-          />
-        </div>
-        <div
-          id="card-3"
-          class="absolute bottom-10 -right-36 rounded-full shadow-lg shadow-red-700"
-        >
-          <img
-            src="assets/image3.png"
-            class="h-24 w-24 object-cover rounded-full"
-          />
-        </div>
-        <div class="flex justify-end">
-          <div class="flex flex-col">
-            <h1 class="font-bold text-gray-800 text-xl">Christin Bird</h1>
-            <p class="text-gray-700 font-medium">Graphic designer</p>
+  <body>
+    <div class="container">
+      <div class="card middleCard" id="card-2">
+        <div class="header">
+          <div class="title">
+            <h3>Islem Medjahdi</h3>
+            <p>Front end developer</p>
           </div>
         </div>
-        <div>
-          <p class="font-medium text-xl mt-4 text-gray-800">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-            inventore dolores cum.
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde
+            libero corporis pariatur fugit sint obcaecati fuga maxime possimus
+            modi quos ea
           </p>
         </div>
+        <img
+          id="img-2"
+          class="img"
+          src="images/image2.jpg"
+          alt="image2"
+          width="100"
+          height="100"
+        />
       </div>
-      <!-- END CARD #1 -->
+      <div class="card hiddenCard rightCard" id="card-1">
+        <div class="hiddenHeader">
+          <div class="title">
+            <h3>Christin Bird</h3>
+            <p>Graphic designer</p>
+          </div>
+        </div>
+        <div class="hiddenDescription">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde
+            libero corporis pariatur fugit sint obcaecati fuga maxime possimus
+            modi quos ea
+          </p>
+        </div>
+        <img
+          id="img-1"
+          class="img"
+          src="images/image1.jpg"
+          alt="image1"
+          width="100"
+          height="100"
+        />
+      </div>
+      <div class="card hiddenCard leftCard" id="card-3">
+        <div class="hiddenHeader">
+          <div class="title">
+            <h3>lorem ipsum</h3>
+            <p>GDG leader</p>
+          </div>
+        </div>
+        <div class="hiddenDescription">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde
+            libero corporis pariatur fugit sint obcaecati fuga maxime possimus
+            modi quos ea
+          </p>
+        </div>
+        <img
+          id="img-3"
+          class="img"
+          src="images/image3.jpg"
+          alt="image3"
+          width="100"
+          height="100"
+        />
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
